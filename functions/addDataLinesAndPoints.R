@@ -29,6 +29,7 @@ addDataLinesAndPoints <- function(graph, data, legend, labels) { # legend: boole
   }
   
   # some data transformation magik
+  # for why, see: https://stackoverflow.com/questions/17151548/r-handling-and-plotting-grouped-data
   dfSession <- melt(data, id.vars='session')
   
   dfSession <- dfSession[!(dfSession$variable=='condition'),]
@@ -39,7 +40,7 @@ addDataLinesAndPoints <- function(graph, data, legend, labels) { # legend: boole
   
   # make lines ~~
   lines <- geom_line(data=dfSession, 
-                     aes(x=session, y=value, group=interaction(variable, dfCondition$condition), linetype=variable), 
+                     aes(x=session, y=value, group=interaction(variable, dfCondition$condition), linetype=variable), # info about interactions: https://stackoverflow.com/questions/12180515/using-geom-line-with-multiple-groupings
                      colour="black", size=0.5, show.legend = FALSE)
   # make points ~~
   points <- geom_point(data=dfSession, 
