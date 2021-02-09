@@ -20,9 +20,9 @@ graph <- graph + coord_fixed(ratio=1.6)
 # set labels ~~
 graph <- graph + labs(title='An Example AB Graph', x="Sessions", y="Count per Measure")
 
-# add trend lines and points ~~
+# add trend lines, points, legend labels ~~
 source('./functions/addDataLinesAndPoints.R')
-graph <- addDataLinesAndPoints(graph, data)
+graph <- addDataLinesAndPoints(graph, data, TRUE, c('Bx1', 'Bx2', 'Bx3'))
 
 # add condition lines ~~
 source('./functions/addConditionLines.R')
@@ -36,4 +36,5 @@ graph <- addConditionLabels(graph, data, labels=c('Condition 1', 'Condition 2'))
 graph
 
 # print graph to file
-ggsave("graph-session-bxn.png", graph, width=16, height=10, units="cm")
+ggsave("graph-session-bxn.png", graph, width=25.6, height=16, units="cm")
+
