@@ -2,14 +2,22 @@
 
 This repository provides examples of how to use the `R` programming language to plot a basic time series design.
 
-Here is an example AB design produced by the file `graph-session-bx1.R`:
+## AB design w/ 1 behavior:
+
+The following plot was produced by the file `graph-session-bx1.R`:
 
 ![example AB design plot](https://github.com/harleylang/aba-itsd-ab/blob/main/graph-session-bx1.png?raw=true)
+
+## AB design w/ n behaviors:
+
+The following plot was produced by the file `graph-session-bxn.R`:
+
+![example AB design plot](https://github.com/harleylang/aba-itsd-ab/blob/main/graph-session-bxn.png?raw=true)
 
 ## Contributing
 Pull requests are welcome! In particular, this repo is in need of the following:
 * [ ] Fully detailed instructions on how to get started with `R` and RStudio.
-* [ ] Example graph: Multiple behaviors in each condition
+* [x] Example graph: Multiple behaviors in each condition
 * [ ] Example graph: Multiple conditions (e.g., ABAB; perhaps put in a different repository?)
 * [ ] Example graph: Continuous x-axis
 * [ ] Example graph: With optional legend.

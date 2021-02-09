@@ -1,3 +1,4 @@
-#
+# ignore generated pngs, except examples
 .png
 !graph-session-bx1.png
+!graph-session-bxn.png
