@@ -1,7 +1,7 @@
-# A function that identifies breaks in a 'condition' column, logs those breaks, and returns
+# A function that identifies breaks in the 'condition' column, logs those breaks, and returns
 # an updated graph with labels those condition-break points. The 'labels' value provided to
 # the function should be a vector of strings, one for each condition. If you do not provide
-# a string for each condition, R will thow an error due to a mismatching condition/label count.
+# a string for each condition, R will throw an error due to a mismatching condition/label count.
 
 addConditionLabels <- function(graph, data, labels) {
   
@@ -24,7 +24,7 @@ addConditionLabels <- function(graph, data, labels) {
       cl <- c(cl, i - 0.5)
       
       # check if next condition exists
-      if (length(cl) + 1 == length(conditions)) { # if all phrases are captures, break
+      if (length(cl) + 1 == length(conditions)) { # if all conditions are accounted for, break
         break
       } else { # else, look for starting location of the next condition
         cl <- conditions[length(cl) + 1]

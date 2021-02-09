@@ -1,3 +1,5 @@
+# A function that provides basic APA styling to a graph.
+
 graphThemeTemplate <- function(data) {
   return(
     ggplot() + 

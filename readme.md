@@ -1,8 +1,9 @@
-# AB Time Series Design Boilerplate for Applied Behavior Analysts
+# Time Series Design Boilerplate for Applied Behavior Analysts
 
-This repository provides examples of how to use the `R` programming language to plot a basic AB time series design.
+This repository provides examples of how to use the `R` programming language to plot a basic time series design.
 
-Here is an example graph produced by the file `graph-session-bx1.R`:
+Here is an example AB design produced by the file `graph-session-bx1.R`:
+
 ![example AB design plot](https://github.com/harleylang/aba-itsd-ab/blob/main/graph-session-bx1.png?raw=true)
 
 ## Contributing

@@ -1,4 +1,4 @@
-# A function that identifies breaks in a 'condition' column, logs those breaks, and returns
+# A function that identifies breaks in the 'condition' column, logs those breaks, and returns
 # an updated graph with lines at those condition-break points.
 
 addConditionLines <- function(graph, data) {
@@ -22,7 +22,7 @@ addConditionLines <- function(graph, data) {
       cl <- c(cl, i - 0.5)
       
       # check if next condition exists
-      if (length(cl) + 1 == length(conditions)) { # if all phrases are captures, break
+      if (length(cl) + 1 == length(conditions)) { # if all conditions are captured, break
         break
       } else { # else, look for starting location of the next condition
         cl <- conditions[length(cl) + 1]
