@@ -2,12 +2,12 @@
 # This file produces an example graph with session-by-session data for up to 4 behaviors.
 # Written by Harley Lang.
 # Contributors: [add yourself here if you edit this document]
-library(ggplot2)
+library(ggplot2, dplyr)
 
 # set your working directory to current directory
 setwd(dirname(rstudioapi::getActiveDocumentContext()$path))
 
-# load data from CSV file; here we loaded a file with 3 behaviors, but any number of bhx between 1-4 will work
+# load data from CSV file; here we loaded a file with 3 behaviors, but any number of bxs between 1-4 will work
 data <- read.csv('./data/eg-session-bx3.csv', header = TRUE)
 
 # graph aesthetics 

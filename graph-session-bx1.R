@@ -2,7 +2,7 @@
 # This file produces an example graph with session-by-session data for 1 behavior.
 # Written by Harley Lang.
 # Contributors: [add yourself here if you edit this document]
-library(ggplot2)
+library(ggplot2, dplyr)
 
 # set your working directory to current directory
 setwd(dirname(rstudioapi::getActiveDocumentContext()$path))
