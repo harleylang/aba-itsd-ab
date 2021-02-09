@@ -21,10 +21,10 @@ graph <- graph + coord_fixed(ratio=1.6)
 graph <- graph + labs(title='An Example AB Graph', x="Sessions", y="Count per Measure")
 
 # add trend lines ~~
-graph <- graph + geom_line(aes(x=data$session, y=data$score, group=data$condition), colour="black", size=0.5)
+graph <- graph + geom_line(aes(x=data$session, y=data$bx1, group=data$condition), colour="black", size=0.5)
 
 # add the data points ~~
-graph <- graph + geom_point(aes(x=data$session, y=data$score, group=data$condition), colour="black", size=2.5)
+graph <- graph + geom_point(aes(x=data$session, y=data$bx1, group=data$condition), colour="black", size=2.5)
 
 # add condition lines ~~
 source('./functions/addConditionLines.R')

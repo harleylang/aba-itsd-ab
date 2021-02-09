@@ -5,7 +5,7 @@ graphThemeTemplate <- function(data) {
         limits=c(0, max(data$session) + 0.5)) +
       scale_y_continuous(expand = c(0, 0), 
         labels = scales::number_format(accuracy = 1), # remove decimal points, change accuracy to add decimals (e.g., `0.1`)
-        limits=c(0, max(data$score) + 0.5)) +
+        limits=c(0, max(data$bx1) + 0.5)) +
       theme_classic() + 
       theme(
         axis.line.x = element_line(colour="black"),

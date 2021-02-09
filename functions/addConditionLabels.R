@@ -41,7 +41,7 @@ addConditionLabels <- function(graph, data, labels) {
   clines <- data.frame(cl = cl, labels=labels)
   
   # update graph
-  updatedGraph <- graph + geom_text(data=clines, aes(x=cl, y=max(data$score), label=labels), hjust=-0.1, inherit.aes = FALSE)
+  updatedGraph <- graph + geom_text(data=clines, aes(x=cl, y=max(data$bx1), label=labels), hjust=-0.1, inherit.aes = FALSE)
   
   # return updated graph
   return(updatedGraph)
